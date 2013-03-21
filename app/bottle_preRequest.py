@@ -1,5 +1,4 @@
-import bottle, config, re, MySQLdb
-import MySQLdb.cursors as cursors
+import bottle, config, re
 from bottle import request, response, redirect
 
 from model.Factory import Factory
