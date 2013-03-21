@@ -109,7 +109,6 @@ Trackathon.Dialog.NewIdea = function() {
 		Trackathon.Util.block("Saving your new idea...");
 
 		idea = new Trackathon.Model.Idea(0, self.$ideaName.val(), self.$description.val(), self.$enteredBy.val());
-		console.log("save: %o", idea);
 		self.service.save(idea, callback);
 
 		self.$ideaName.val("");
@@ -154,7 +153,6 @@ Trackathon.ViewModel.Index = function() {
 
 	self.saveNewIdea = function() {
 		self.newIdeaModal.save(function(data) {
-			console.log("Save: %o", data);
 			self.ideas.push(data);
 		});
 	};
