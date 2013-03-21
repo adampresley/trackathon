@@ -1,5 +1,5 @@
 Beaker
-SQLAlchemy
+SQLAlchemy==0.7.8
 nose
 rednose
 mock
