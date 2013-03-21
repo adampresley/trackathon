@@ -1,6 +1,6 @@
 # Trackathon
 
-**Track-a-thon** is an application for groups or organizations to track
+**Trackathon** is an application for groups or organizations to track
 and manage Hackathons. A hackathon is some type of scheduled event where
 developers, testers, designers, etc get together to collaborate quickly
 on some type of software project.
