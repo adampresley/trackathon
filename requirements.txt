@@ -1,0 +1,10 @@
+Beaker
+SQLAlchemy
+nose
+rednose
+mock
+coverage
+python-dateutil
+simplejson
+Elixir
+gunicorn
