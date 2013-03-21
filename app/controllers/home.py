@@ -37,7 +37,7 @@ def api_newIdea():
 		)
 
 		session.commit()
-		return newIdea.id
+		return str(newIdea.id)
 
 	except Exception as e:
 		print e

@@ -52,6 +52,8 @@ Trackathon.Model.IdeaService = function() {
 
 		$.post("/api/idea", data).done(function(result) {
 			Trackathon.Util.unblock();
+
+			data.id = window.parseInt(result);
 			callback(data);
 		}).fail(function(result) {
 			Trackathon.Util.unblock();
@@ -152,6 +154,7 @@ Trackathon.ViewModel.Index = function() {
 
 	self.saveNewIdea = function() {
 		self.newIdeaModal.save(function(data) {
+			console.log("Save: %o", data);
 			self.ideas.push(data);
 		});
 	};
