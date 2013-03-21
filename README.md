@@ -5,6 +5,8 @@ and manage Hackathons. A hackathon is some type of scheduled event where
 developers, testers, designers, etc get together to collaborate quickly
 on some type of software project.
 
+![Trackathon Home Page](./screenshots/trackathon-screenshot-home.png "Trackathon Home Page")
+
 
 ## MIT License
 Copyright (c) 2013 Adam Presley
