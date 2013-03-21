@@ -5,6 +5,9 @@ Trackathon = {
 	"ViewModel": {},
 };
 
+/*
+ * Utility objects
+ */
 Trackathon.Util.block = function(message, el) {
 	if (el) {
 		$(el).block({ message: "<h3 style='padding-top: 6px;'>" + message + "</h3>" });
@@ -21,6 +24,10 @@ Trackathon.Util.unblock = function(el) {
 	}
 };
 
+
+/*
+ * Model objects 
+ */
 Trackathon.Model.Idea = function(id, ideaName, description, enteredBy) {
 	var self = this;
 
@@ -30,6 +37,10 @@ Trackathon.Model.Idea = function(id, ideaName, description, enteredBy) {
 	self.enteredBy = enteredBy || "";
 };
 
+
+/*
+ * Service objects
+ */
 Trackathon.Model.IdeaService = function() {
 	var self = this;
 
@@ -70,6 +81,9 @@ Trackathon.Model.IdeaService = function() {
 };
 
 
+/*
+ * Dialogs
+ */
 Trackathon.Dialog.NewIdea = function() {
 	var self = this;
 
@@ -117,6 +131,9 @@ Trackathon.Dialog.NewIdea = function() {
 };
 
 
+/* 
+ * ViewModel objects/handlers
+ */
 Trackathon.ViewModel.Index = function() {
 	var self = this;
 
@@ -161,4 +178,4 @@ Trackathon.ViewModel.Index = function() {
 		self.ideaService.remove(idea);
 		self.ideas.remove(idea);
 	};
-}
+};
